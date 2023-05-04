@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="description" content="Your description goes here">
+		<meta name="keywords" content="one, two, three">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+		<script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp"></script>
+		<script src="https://kit.fontawesome.com/9d0d3b95e0.js" crossorigin="anonymous"></script>
+		<link rel="icon" type="image/png" sizes="16x16" href="/template/assets/favicon-16x16.png">	
+
+		 
+		<title>Watchpedia</title>
+
+		<!-- external CSS link -->
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+
+	<body class="font-['Oswald'] bg-[#000000] bg-opacity-97 ">
+		<header  class="bg-[#000000] text-white max-lg fixed top-0 left-0 right-0 z-10 bg-opacity-10 backdrop-blur-lg ">
+			<nav id="nav" class="flex flex-row justify-evenly ">
+				<span class="logo my-6 h-5/6 flex items-center text-4xl uppercase"><span class="text-[#d9a520]">Watch</span>pedia</span>
+				<ul class="navList flex flex-row-reverse basis-2/3 my-7 h-5/6 text-xl">
+					<li class="tvNav basis-20 h-8 flex items-center"><a href="#showheading">TV Shows</a></li>
+					<li class="moviesNav basis-20 h-8 flex items-center"><a href="#movieheading">Movies</a></li>
+					<li class="homeNav basis-20 h-8 flex items-center"><a href="#mainContainer">Home</a></li>
+				</ul>
+				<div class="search-container my-5 text-black flex items-center" action="">
+					<input id="inputValue" class=" inputSearch" type="search" placeholder="Search..." name="">
+					<section class="searchResults">
+						<section class="one clearfix">
+							<!-- <img src="" alt="img"> -->
+							<h3 id="firstSearch">Game of thrones</h3>
+							<h4 id="firstSearchYear">year</h4>
+						</section>
+						<section class="two clearfix">
+							<!-- <img src="" alt="img"> -->
+							<h3 id="secondSearch">Game of thrones</h3>
+							<h4 id="secondSearchYear">year</h4>
+						</section>
+						<section class="three clearfix">
+							<!-- <img src="" alt="img"> -->
+							<h3 id="thirdSearch">Game of thrones</h3>
+							<h4 id="thirdSearchYear">year</h4>
+						</section>
+					</section>
+				</div>
+
+
+
+			</nav>
+		</header>
+
+		<div id="myModal" class="modal">
+			<div class="modal-content">
+				<div class="imgContainer">
+					<img src="https://m.media-amazon.com/images/M/MV5BYzFhM2M1MDUtNDhmNC00YzEzLThiMzctYWYxZTc0MGJhNWYyXkEyXkFqcGdeQXVyMTUzMTg2ODkz._V1_Ratio0.7910_AL_.jpg" alt="Image">
+				</div>
+				<div class="infoContainer">
+					<span class="close">&times;</span>
+					<h2>Title</h2>
+					<h2 id="releaseDate">Release Date: 26 May 2023</h2>
+					<!-- <h2 id="genre">Title</h2> -->
+					<h2 id="castCrew">Cast: Brett Ratner</h2>
+					<h2 id="Rating">Rating: 6.6/10 <i class="fa-solid fa-star"></i></h2>
+					<p>Plot: Text content goes here.</p>
+				</div>
+
+			</div>
+
+		</div>
+
+		<main id="mainContainer" class=" main-section text-left  bg-[center_top_-15rem] bg-no-repeat flex flex-col place-content-end  h-[85vh] mt-24 mx-14">
+	
+			<h1 class="px-16  text-8xl mb-5 text-[#d9a520]">Inception</h1>
+			<p class="plot px-16 text-3xl w-3/5 mb-5">A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster.</p>
+			<section class="px-16 mb-20">
+				<span class="date pr-2 text-1xl border-r-2 border-[#daa520]">2010-07-16</span>
+				<span class="crew px-2 text-1xl border-r-2 border-[#daa520]">2h 28min</span>
+				<span class="iMDBRating px-2 text-1xl ">Christopher Nolan</span>
+			</section>
+		</main>
+
+
+		<section class="movieSectionContainer mt-16 mx-14 ">
+			<h2 id="movieheading" class="trendingMovies text-4xl mb-5 uppercase"><span>Trending</span> Movies</h2>
+			<section class="flex flex-row " >
+				<section class="p-10 flex flex-col text-left place-content-center movieSection w-1/3 h-[43vh] bg-[url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6762_AL_.jpg')] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">name</h3>
+					<p class="hidden textPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magnam.</p>
+					<button id="movieOne" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded  whitespace-no-wrap text-center">Read More</button>
+				</section>
+				<section class="p-10 flex flex-col text-left place-content-center movieSection w-1/3 h-[43vh] bg-[url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6762_AL_.jpg')] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">name</h3>
+					<p class="hidden textPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magnam.</p>
+					<button id="movieTwo" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded  whitespace-no-wrap text-center">Read More</button>
+				</section>
+				<section class="p-10 flex flex-col text-left place-content-center movieSection w-1/3 h-[43vh] bg-[url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6762_AL_.jpg')] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">name</h3>
+					<p class="hidden textPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magnam.</p>
+					<button id="movieThree" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded  whitespace-no-wrap text-center">Read More</button>
+				</section>
+				<section class="p-10 flex flex-col text-left place-content-center movieSection w-1/3 h-[43vh] bg-[url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6762_AL_.jpg')] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">name</h3>
+					<p class="hidden textPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magnam.</p>
+					<button id="movieFour" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded  whitespace-no-wrap text-center">Read More</button>
+				</section>
+				<section class="p-10 flex flex-col text-left place-content-center movieSection w-1/3 h-[43vh] bg-[url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6762_AL_.jpg')] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">name</h3>
+					<p class="hidden textPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magnam.</p>
+					<button id="movieFive" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded  whitespace-no-wrap text-center">Read More</button>
+				</section>
+				<section class="p-10 flex flex-col text-left place-content-center movieSection w-1/3 h-[43vh] bg-[url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6762_AL_.jpg')] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">name</h3>
+					<p class="hidden textPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magnam.</p>
+					<button id="movieSix" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded  whitespace-no-wrap text-center">Read More</button>
+				</section>
+			</section>
+		</section>
+
+		<section class="showSectionContainer mt-14 mx-14 mb-14">
+			<h2 id="showheading" class="topShows text-4xl mb-5 uppercase"><span>Top</span> Shows</h2>
+			<section class="flex flex-row " >
+				<section class=" p-10 flex flex-col text-left place-content-center showSection w-1/3 h-[43vh] bg-[red] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">Inception</h3>
+					<p class="hidden textPara">A thief who steals corporate secrets through the use of dream-sharing technology is given the inverse task of planting an idea into the mind of a C.E.O., but his tragic past may doom the project and his team to disaster..</p>
+					<button id="showOne" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded whitespace-no-wrap text-center">Read More</button>
+				</section>
+				<section class=" p-10 flex flex-col text-left place-content-center showSection w-1/3 h-[43vh] bg-[red] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">name</h3>
+					<p class="hidden textPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magnam.</p>
+					<button id="showTwo" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded  whitespace-no-wrap text-center">Read More</button>
+				</section>
+				<section class="p-10 flex flex-col text-left place-content-center showSection w-1/3 h-[43vh] bg-[url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6762_AL_.jpg')] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">name</h3>
+					<p class="hidden textPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magnam.</p>
+					<button id="showThree" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded whitespace-no-wrap text-center">Read More</button>
+				</section>
+				<section class="p-10 flex flex-col text-left place-content-center showSection w-1/3 h-[43vh] bg-[url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6762_AL_.jpg')] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">name</h3>
+					<p class="hidden textPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magnam.</p>
+					<button id="showFour" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded  whitespace-no-wrap text-center">Read More</button>
+				</section>
+				<section class="p-10 flex flex-col text-left place-content-center showSection w-1/3 h-[43vh] bg-[url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6762_AL_.jpg')] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">name</h3>
+					<p class="hidden textPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magnam.</p>
+					<button id="showFive" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded  whitespace-no-wrap text-center">Read More</button>
+				</section>
+				<section class="p-10 flex flex-col text-left place-content-center showSection w-1/3 h-[43vh] bg-[url('https://m.media-amazon.com/images/M/MV5BMjAxMzY3NjcxNF5BMl5BanBnXkFtZTcwNTI5OTM0Mw@@._V1_Ratio0.6762_AL_.jpg')] bg-contain bg-no-repeat mr-8">
+					<h3 class="hidden textHeading mb-0">name</h3>
+					<p class="hidden textPara">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis, magnam.</p>
+					<button id="showSix" class="hidden buttonReadMore mt-4 w-24 px-2 py-1 text-white bg-red-500 rounded  whitespace-no-wrap text-center">Read More</button>
+				</section>
+			</section>
+		</section>
+
+
+		<footer>
+			<small>Ahmed Hamdy &#169; 2023  <a href="https://twitter.com/AhmedHHamdyx"><i class="fa-brands fa-twitter"></i></a></small>
+			<h6>Streaming data powered by <a href="https://api.watchmode.com/">Watchmode</h6>
+		</footer>
+
+		<script type="text/javascript" src="js/main.js"></script>
+	</body>
+</html>

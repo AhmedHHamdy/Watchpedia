@@ -1,0 +1,551 @@
+/* Box Model Hack */
+* {
+  box-sizing: border-box;
+}
+
+/* Clear fix hack */
+.clearfix:after {
+     content: ".";
+     display: block;
+     clear: both;
+     visibility: hidden;
+     line-height: 0;
+     height: 0;
+}
+
+.clear {
+	clear: both;
+}
+
+/******************************************
+/* BASE STYLES
+/*******************************************/
+
+body {
+
+}
+
+
+/******************************************
+/* LAYOUT
+/*******************************************/
+header {
+
+}
+
+footer {
+
+}
+
+/******************************************
+/* ADDITIONAL STYLES
+/*******************************************/
+/* .showSection {
+  background-image: url('your-image.jpg');
+  transition: background-image 0.5s;
+}
+
+.showSection.hide {
+  animation: shrink-and-fade-out 0.5s forwards;
+}
+
+@keyframes shrink-and-fade-out {
+  0% {
+    transform: scale(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scale(0.5);
+    opacity: 0.5;
+  }
+} */
+
+section .buttonReadMore {
+  border-radius: 2px;
+  padding: 8% 4%;
+  width: 55%;
+  background-color: #1A1918;
+  border: 2px solid #d9a520;
+}
+
+section .buttonReadMore:hover {
+  background-color: #d9a520;
+}
+
+.showSection h3 {
+  color: #d9a520;
+}
+
+.movieSection h3 {
+  color: #d9a520;
+}
+
+section + .buttonReadMoreMain {
+  border-radius: 4px;
+  padding: 1% 2%;
+  width: 10%;
+  font-size: 1.2rem;
+}
+
+.textHeading {
+  font-size: 2rem;
+  color: white;
+  margin: 0;
+}
+
+.textPara {
+  font-size: 1rem;
+  color: white;
+  width: 100%;
+  line-height: 1em;
+  margin-top: 2%;
+}
+
+/* CSS */
+main {
+  background-size: cover;
+  background-position: center;
+  transition: background-image 0.5s ease-in-out;
+}
+
+h1 {
+  transition: opacity 0.5s ease-in-out;
+}
+
+
+
+.main-section {
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  box-shadow: inset 0 802px 15px rgba(0, 0, 0, 0.5);
+  background-size: cover;
+  background-color: #1A1918;
+  color: #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.main-section h1 {
+  font-size: 3rem;
+}
+
+.main-section p {
+  max-width: 800px;
+  font-size: 1.3rem;
+  /* margin: 2rem; */
+}
+
+
+
+
+#myBtn:hover {
+  background: none;
+  border: 2px solid goldenrod;
+  color: goldenrod;
+}
+
+/* The Modal (background) */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 10;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  backdrop-filter: blur(3px);
+  background-color: rgba(0,0,0,0.4);
+}
+
+/* Modal Content */
+.modal-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  background-color: #131313;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border: 1px solid #888;
+  width: 800px;
+  height: 500px;
+  color: white;
+  border: 0;
+  border-radius: 6px;
+  position: absolute;
+}
+
+
+.imgContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  padding: 15% 0;
+}
+
+.imgContainer img {
+  width: 75%;
+  border: 3px solid #aaa;;
+}
+
+.infoContainer {
+  display: flex;
+  flex-direction: column;
+  margin: 5% 0;
+}
+
+
+.infoContainer h2 {
+  font-size: 3rem;
+  font-family: 'Oswald';
+  color: #daa520;
+  margin-bottom: 7%;
+}
+
+#releaseDate {
+  font-size: 1rem;
+  margin-bottom: 5%;
+  color: white;
+}
+
+#castCrew {
+  font-size: 1rem;
+  margin-bottom: 5%;
+  color: white;
+}
+
+#Rating {
+  margin-bottom: 5%;
+  font-size: 1rem;
+  color: white;
+}
+
+.fa-star {
+  color: goldenrod;
+  vertical-align: baseline;
+}
+
+
+.infoContainer p {
+  width: 90%;
+}
+
+
+/* The Close Button */
+.close {
+  position: absolute;
+  bottom: 430px;
+  align-self: flex-end;
+  font-size: 3rem;
+  font-weight: bold; 
+}
+
+.close:hover,
+.close:focus {
+  color: #d9a520;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+header ul li a {
+  position: relative;
+  border-bottom: 2px solid transparent;
+}
+
+header ul li a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+  background-color: #d9a520;
+  transition: width 0.3s ease-in-out;
+}
+
+header ul li a:hover::after {
+  width: 100%;
+}
+
+.search-container {
+  width: 12.5%;
+  margin-right: 3%;
+  margin-left: 1%;
+}
+
+.search-container:focus {
+  outline: none!important;
+}
+input.inputSearch {
+  color: white;
+  width: 100%;
+  border-radius: 20px;
+  padding: 3% 5% 3% 10%;
+  background: rgb(55, 55, 55);
+
+
+}
+
+.one:hover {
+  cursor: pointer;
+}
+
+.two:hover {
+  cursor: pointer;
+}
+
+.three:hover {
+  cursor: pointer;
+}
+
+.navList {
+  margin-left: 10%;
+}
+.logo {
+  margin-left: 3%;
+}
+
+
+/* Heading for section */
+
+.topShows {
+  color: white;
+  margin-bottom: 2.5%;
+}
+
+.topShows span{
+  border-bottom: 4px solid goldenrod;
+}
+
+.trendingMovies {
+  color: white;
+  margin-bottom: 2.5%;
+}
+
+.trendingMovies span{
+  border-bottom: 4px solid goldenrod;
+}
+
+/* Search */
+
+.searchResults {
+  display: none;
+  position: absolute;
+  background-color: #373737;
+  width: 11%;
+  text-align: left;
+  right: 55px;
+  height: 25vh;
+  z-index: -2;
+  top: 49px;
+  border-radius: 10px;
+  padding: 1% 0.5%;
+  color: goldenrod;
+}
+
+.searchResults section {
+  background-color: #0000;
+  padding: 2% 2%;
+  text-align: center;
+  width: 100%;
+  height: 7.2vh;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+.searchResults section img {
+  float: left;
+  width: 22%;
+  height: 5vh;
+}
+
+.searchResults section h4 {
+  float: right;
+  width: 25%;
+  height: 4vh;
+  padding-top: 2%;
+}
+
+.searchResults h3 {
+  width: 70%;
+  float: left;
+  height: 4vh;
+  padding-top: 2%;
+}
+
+.searchResults section:hover {
+  background-color: white;
+}
+
+
+
+
+/******************************************
+/* Footer
+/*******************************************/
+
+footer {
+  width: 50%;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1%;
+  font-size: 1.3rem;
+  display: flex;
+  gap: 1%;
+  justify-content: center;
+  color: white;
+  flex-direction: column;
+}
+
+footer i {
+  color: goldenrod;
+  align-self: flex-start;
+  font-size: 1.1rem;
+}
+
+footer small {
+  margin-bottom: 0.4%;
+}
+
+footer h6 {
+  color: white;
+  display: block;
+  font-size: 1rem;
+}
+
+footer h6 a {
+  color: goldenrod;
+  font-size: 1rem;
+}
+
+
+/* Media Query */
+@media all and (max-width: 650px) {
+  
+  #nav {
+    display: block;
+    width: 100%;
+    /* flex-direction: column;
+    align-items: center;
+    justify-content: center; */
+  }
+
+  #nav .logo span{
+    /* width: 50%;
+    margin: 0 auto;
+    text-align: center; */
+    margin-left: 29%;
+  }
+
+  #nav ul {
+    width: 50%;
+    margin: 0 auto;
+  }
+
+  #nav .search-container {
+    width: 50%;
+    margin: 5% auto;
+  }
+
+  #mainContainer {
+    margin: 42% 0 42% 0;
+  }
+
+  .main-section {
+    width: 100%;
+    margin: 42% 0;
+    margin-bottom: 3%;
+    height: 55vh;
+  }
+
+  .main-section h1{
+    width: 20%;
+  }
+
+  .main-section p{
+    width: 100%;
+  }
+
+  .main-section section > span{
+    width: 100%;
+  }
+
+  .movieSectionContainer {
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  .movieSectionContainer h2 {
+    padding-left: 3.5rem;
+  }
+
+  .movieSectionContainer > section{
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  
+  .movieSectionContainer > section .movieSection{
+    width: 60%;
+    margin: 0;
+    margin-top: 5%;
+    margin-left: 25%;
+    display: block;
+
+  }
+
+
+  .showSectionContainer > section{
+    width: 100%;
+    display: block;
+    margin: 0;
+  }
+
+  
+  .showSectionContainer > section .showSection{
+    width: 70%;
+    /* margin: 0 auto; */
+    margin: 0;
+    margin-top: 5%;
+    margin-left: 15%;
+    display: block;
+  }
+
+  #myModal .modal-content {
+    width: 90%;
+  } 
+
+  .imgContainer {
+    margin-right: 4%;
+  }
+
+  .imgContainer img {
+    width: 100%;
+  } 
+
+  .search-container {
+    position: relative;
+  }
+
+  .searchResults {
+    top: 20px;
+    right: 28px;
+    width: 80%;
+    border-top-right-radius: 2px;
+    border-top-left-radius: 2px;
+    padding-top: 10%;
+    position: absolute;
+  }
+
+  
+}
