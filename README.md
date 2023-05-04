@@ -5,7 +5,7 @@ This is a website that displays trending movies and TV shows, and provides a lar
 
 ## How It&#39;s Made:
 
-**Tech used:**  HTML, CSS, and JavaScript
+**Tech used:**  JavaScript, CSS3, HTML5, Tailwind and WatchMode API
 
 The website was built using HTML and CSS to create the user interface and JavaScript to handle user interaction and API requests. The website utilizes two APIs to gather data about movies and TV shows: The Movie Database API and the WatchMode API. The website displays trending movies and TV shows on the home page, with links to view more information about each title. When a user clicks on a title, the JavaScript code sends an API request to the corresponding API to gather more information about the title, such as plot summary, cast and crew, and ratings. The website then displays this information to the user.
 ## Optimizations
